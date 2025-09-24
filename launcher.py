@@ -79,7 +79,7 @@ class Launcher:
             running = True
             
             while running:
-                clock.tick(180)
+                clock.tick(180) #tick rate
                 
                 for event in pygame.event.get():
                     if event.type == pygame.QUIT:

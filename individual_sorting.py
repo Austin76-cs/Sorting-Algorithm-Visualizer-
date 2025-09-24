@@ -114,7 +114,7 @@ def main():
     color_positions = {}
 
     while run:
-        clock.tick(120)
+        clock.tick(180)
 
         if sorting:
             try:

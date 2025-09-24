@@ -83,6 +83,7 @@ class ComparisonMode:
                     current_time = time.time() - start_time
                     self.current_times[algorithm_name] = current_time
                     self.timing_data[algorithm_name].append(current_time)
+                    time.sleep(0.00001)
 
         except Exception as e:
             print(f"Error in {algorithm_name}: {e}")
@@ -255,7 +256,7 @@ def main():
     
     frame_count = 0
     while running:
-        clock.tick(500) 
+        clock.tick(180) 
         
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
